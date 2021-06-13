@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use DB;
+
 use Illuminate\Http\Request;
 
-class UserCont extends Controller
+class AdminCont extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,12 +13,10 @@ class UserCont extends Controller
      */
     public function index()
     {
-
-        $user = \DB::table('restaurant')->get();
+        $admin = DB::select("","=",1)->select("id","username")
     
             return view('user', compact('user'));
-            
-        }
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -38,7 +36,7 @@ class UserCont extends Controller
      */
     public function store(Request $request)
     {
-        return ($request);
+        //
     }
 
     /**

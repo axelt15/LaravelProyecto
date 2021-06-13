@@ -9,7 +9,7 @@ Inicio se sesión | Rapidisimo
 @section('conte')
     <h1><center>Inicio de sesión</center></h1>
 
-    <form action="user" method="POST" id="form">
+    <form action="{{ route('usercontro') }}" method="POST" id="form">
     @csrf
         <label for="mail">Email</label>
     <p><input type="text" id="mail" autofocus required placeholder="Ingresa tu correo" name="mail"></p>
