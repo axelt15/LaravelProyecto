@@ -14,7 +14,7 @@ class UserCont extends Controller
     public function index()
     {
 
-        $user = \DB::table('restaurant')->get();
+        $user = \DB::table('restaurants')->get();
     
             return view('user', compact('user'));
             

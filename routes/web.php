@@ -27,4 +27,4 @@ Route::view('/about', 'about')->name("about");
 
 
 //Rutas para admin
-Route::post("/admin", 'App\Http\Controllers\AdminCont@index')->name('admin')
+Route::get("/admin", 'App\Http\Controllers\AdminCont@index')->name('admin');

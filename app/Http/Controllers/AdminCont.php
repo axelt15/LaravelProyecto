@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\restaurant;
+use DB;
 use Illuminate\Http\Request;
 
 class AdminCont extends Controller
@@ -13,9 +14,9 @@ class AdminCont extends Controller
      */
     public function index()
     {
-        $admin = DB::select("","=",1)->select("id","username")
+        $admin = restaurant::where('FK_IdAdmin', '1')->orderBy('Id_Rest','desc')->get();
     
-            return view('user', compact('user'));
+            return view('/admi', compact('admin'));
     }
 
     /**
