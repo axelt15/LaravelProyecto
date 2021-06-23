@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>Mi orden</title>
+	<link rel="stylesheet"  href="#">
+</head>
+<body>
+	<header>
+		<nav>
+			<section class="contenedor nav">
+				<div class="logo">
+					<a href="#"><img src="#"></a>
+				</div>
+				<div class="enlaces-header">
+					<a href="#">Inicio</a>
+					<a href="#">Menú</a>
+					<a href="#">Promociones</a>
+					<a href="#">Adicionales</a>
+				</div>
+			</section>
+		</nav>
+				<form action="ordenar.php" method="post" class="form">
+		<div class="conte1">
+		<h1>Realice su pedido</h1>
+		</div>
+		<div class="contenedor2">
+			<form action="ordenar.php" method="post">
+			<select type="text" name="Masa" class="input-48" required>
+        <option value="0">Masa</option>
+        <option value="Masa Original">Masa Original</option>
+        <option value="Masa Orilla Rellena de Queso">Masa Orilla Rellena de Queso</option>
+      </select>
+			<select type="text" name="Tamano" class="input-48" required>
+        <option value="0">Tamaño</option>
+        <option value="Mediana">Mediana 30cm (3 personas)</option>
+        <option value="Grande">Grande 35cm (5 personas)</option>
+        <option value="ExtraGrande">Extra grande (8 personas)</option>
+      </select>
+		<select type="text" name="Cantidad" class="input-48" required>
+        <option value="0">Cantidad</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      		<h4>Mitad y Mitad</h4>
+      		<select type="text" name="MitadI" class="input-48" required>
+        <option value="0">Mitad Izquierda</option>
+        <option value="Hawaiana">Hawaiana</option>
+        <option value="Pepperoni">Pepperoni</option>
+        <option value="Cuatro Quesos">Cuatro Quesos</option>
+        <option value="Carnes Frias">Carnes Frias</option>
+        <option value="Mexicana">Mexicana</option>
+      </select>
+      <select type="text" name="MitadD" class="input-48" required>
+        <option value="0">Mitad Derecha</option>
+        <option value="Hawaiana">Hawaiana</option>
+        <option value="Pepperoni">Pepperoni</option>
+        <option value="Cuatro Quesos">Cuatro Quesos</option>
+        <option value="Carnes Frias">Carnes Frias</option>
+        <option value="Mexicana">Mexicana</option>
+      </select>
+
+        <h4>Adicionales</h4>
+        <select type="text" name="Adicionales" class="input-48" required>
+        <option value="0">Adicionales</option>
+        <option value="Papas Gajo">Papas Gajo</option>
+        <option value="Papas a la Francesa">Papas a la Francesa</option>
+        <option value="Aros de Cebolla">Aros de Cebolla</option>
+        <option value="Dedos Rellenos de Queso">Dedos Rellenos de Queso</option>
+        <option value="Palitos de Pan">Palitos de Pan</option>
+      </select>
+			<input type="submit" value="Ordenar" class="btn-enviar">
+		</form>
+		</div>
+	</form>
+</header>
+	<footer>
+		<div class="parfo">
+					<h4>Dirección</h4>
+			<p>Las Lomas, Coyuca de Benítez</p>
+		</div>
+		<div class="parfo">
+			<h4>Contactos</h4>
+			<p>
+Teléfono: 7441172205</p>
+		</div>
+		<div class="parfo">
+			<h4>Redes sociales</h4>
+				<a href="#"><img src="img/face.png"></a>
+				<a href="#"><img src="img/insta.png"></a>
+		</div>
+	</footer>
+</body>
+</html>
+
